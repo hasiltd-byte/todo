@@ -44,7 +44,7 @@ button {
   color: inherit;
 }
 main {
-  overflow: hidden;
+  overflow: clip;
 }
 
 .site-shell {
