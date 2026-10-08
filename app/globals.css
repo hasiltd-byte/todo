@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Rubik:wght@700;800;900&display=swap");
-
 :root {
   --ink: #17131d;
   --muted: #6d6875;
@@ -27,7 +25,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Heebo", Arial, sans-serif;
+  font-family: var(--font-heebo), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 button,
@@ -89,7 +87,7 @@ main {
   align-items: center;
   gap: 9px;
   flex-shrink: 0;
-  font-family: "Rubik", "Heebo", sans-serif;
+  font-family: var(--font-rubik), var(--font-heebo), sans-serif;
   font-weight: 900;
 }
 .brand-bubble {
@@ -381,7 +379,7 @@ main {
 .hero h1 {
   margin: 0;
   max-width: 650px;
-  font-family: "Rubik", "Heebo", sans-serif;
+  font-family: var(--font-rubik), var(--font-heebo), sans-serif;
   font-size: clamp(48px, 6.1vw, 83px);
   line-height: 0.98;
   letter-spacing: -0.065em;
@@ -492,7 +490,7 @@ main {
   background: var(--yellow);
   border: 3px solid var(--ink);
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-size: 28px;
   font-weight: 900;
 }
@@ -618,7 +616,7 @@ main {
 .can-copy strong {
   display: block;
   margin-top: 7px;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-size: 43px;
   text-shadow: 3px 3px 0 #087eaa;
 }
@@ -773,7 +771,7 @@ main {
   height: 91px;
   border: 3px solid var(--ink);
   border-radius: 50%;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-weight: 900;
   text-align: center;
   box-shadow: 5px 6px 0 var(--ink);
@@ -901,7 +899,7 @@ main {
 .kicker {
   display: block;
   margin-bottom: 12px;
-  color: var(--pink-deep);
+  color: #c42163;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.17em;
@@ -914,7 +912,7 @@ main {
 .story-copy h2,
 .contact-copy h2 {
   margin: 0;
-  font-family: "Rubik", "Heebo", sans-serif;
+  font-family: var(--font-rubik), var(--font-heebo), sans-serif;
   font-size: clamp(35px, 4.2vw, 56px);
   line-height: 1.05;
   letter-spacing: -0.045em;
@@ -1063,7 +1061,7 @@ main {
 }
 .card-back strong {
   margin-top: 15px;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-size: 36px;
   line-height: 0.9;
 }
@@ -1193,7 +1191,7 @@ main {
 }
 .story-poster > strong {
   margin-top: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-size: 72px;
   line-height: 0.95;
   letter-spacing: -0.08em;
@@ -1215,7 +1213,7 @@ main {
   border: 3px solid var(--ink);
   border-radius: 50%;
   background: white;
-  color: var(--pink-deep);
+  color: #c42163;
   font-size: 13px;
   font-weight: 900;
   line-height: 1;
@@ -1278,7 +1276,7 @@ main {
 .why-strip strong {
   grid-row: 1 / span 2;
   color: var(--yellow);
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-rubik), sans-serif;
   font-size: 36px;
 }
 .why-strip span {
@@ -1461,7 +1459,7 @@ main {
   font-size: 13px;
 }
 .footer-inner small {
-  color: #77717d;
+  color: #aaa3b0;
 }
 
 @media (max-width: 980px) {

@@ -179,7 +179,7 @@ export default function LandingClient() {
             aria-label="TODO - עמוד הבית"
             onClick={closeMenu}
           >
-            <span className="brand-bubble">T</span>
+            <span className="brand-bubble" aria-hidden="true">T</span>
             <span className="brand-word">TODO</span>
           </a>
 
@@ -276,8 +276,9 @@ export default function LandingClient() {
                 alt="ממתקים צבעוניים, שתייה קרה, בלונים ומתנה בחנות TODO"
                 width={1448}
                 height={1086}
-                priority
-                sizes="(max-width: 980px) 90vw, 48vw"
+                loading="eager"
+                fetchPriority="high"
+                sizes="(max-width: 532px) calc(89vw - 32px), (max-width: 640px) 442px, (max-width: 980px) 570px, (max-width: 1199px) calc(53vw - 52px), 595px"
               />
             </div>
           </div>

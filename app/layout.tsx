@@ -1,5 +1,18 @@
 import type {Metadata} from "next";
+import { Heebo, Rubik } from "next/font/google";
 import "./globals.css";
+
+const heebo = Heebo({
+  subsets: ["hebrew", "latin"],
+  variable: "--font-heebo",
+  display: "swap",
+});
+
+const rubik = Rubik({
+  subsets: ["hebrew", "latin"],
+  variable: "--font-rubik",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "TODO | ממתקים, שתייה, בלונים ומתנות בקניון נחמיה",
@@ -19,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
-    <html lang="he" dir="rtl">
+    <html lang="he" dir="rtl" className={`${heebo.variable} ${rubik.variable}`}>
       <body>{children}</body>
     </html>
   );
